@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/spacex-cargo-planner/static/css/main.438c917f.chunk.css",
+    "main.js": "/spacex-cargo-planner/static/js/main.a09a0c73.chunk.js",
+    "main.js.map": "/spacex-cargo-planner/static/js/main.a09a0c73.chunk.js.map",
+    "runtime-main.js": "/spacex-cargo-planner/static/js/runtime-main.ed80517e.js",
+    "runtime-main.js.map": "/spacex-cargo-planner/static/js/runtime-main.ed80517e.js.map",
+    "static/js/2.c74ce971.chunk.js": "/spacex-cargo-planner/static/js/2.c74ce971.chunk.js",
+    "static/js/2.c74ce971.chunk.js.map": "/spacex-cargo-planner/static/js/2.c74ce971.chunk.js.map",
+    "index.html": "/spacex-cargo-planner/index.html",
+    "precache-manifest.7dce322cd249ae2921bcdf4f4ebf52ba.js": "/spacex-cargo-planner/precache-manifest.7dce322cd249ae2921bcdf4f4ebf52ba.js",
+    "service-worker.js": "/spacex-cargo-planner/service-worker.js",
+    "static/css/main.438c917f.chunk.css.map": "/spacex-cargo-planner/static/css/main.438c917f.chunk.css.map",
+    "static/js/2.c74ce971.chunk.js.LICENSE.txt": "/spacex-cargo-planner/static/js/2.c74ce971.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed80517e.js",
+    "static/js/2.c74ce971.chunk.js",
+    "static/css/main.438c917f.chunk.css",
+    "static/js/main.a09a0c73.chunk.js"
+  ]
+}
