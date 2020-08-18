@@ -1,0 +1,78 @@
+@import "../../../shared/styles//variables.scss";
+
+.navigation-mobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  transition: all 0.8s ease-in-out;
+}
+
+.menu-button {
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+
+  span {
+    z-index: 100;
+    position: absolute;
+    margin: auto;
+    height: 10%;
+    width: 100%;
+    background-color: $black;
+    border-radius: 50px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.4s ease-out;
+
+    &:nth-child(1) {
+      top: 4px;
+    }
+
+    &:nth-child(2) {
+      top: 14px;
+    }
+
+    &:nth-child(3) {
+      top: 24px;
+    }
+  }
+
+  &.active span {
+    &:nth-child(1) {
+      top: 14px;
+      transform: rotate(135deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+    }
+
+    &:nth-child(3) {
+      top: 14px;
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .navigation-mobile {
+    display: flex;
+  }
+}

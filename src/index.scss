@@ -1,0 +1,99 @@
+@import "./shared//styles//variables.scss";
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+}
+
+button {
+  &.confirm,
+  &.primary {
+    align-self: center;
+    margin: 10px;
+    background-color: $primary;
+    border: 1px solid rgba(43, 201, 240, 0.37);
+    box-shadow: 0 0px 25px -20px $primary;
+    color: $black;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 700;
+    width: 150px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+
+    &:disabled {
+      background-color: transparent;
+      border-color: rgb(236, 67, 16);
+      cursor: not-allowed;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  &.ok {
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+input {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 1.3rem;
+  padding: 8px;
+  background: transparent;
+  color: $black;
+  transition: border-image 0.2s;
+
+  &.error {
+    border-image: linear-gradient(
+      to right,
+      rgb(236, 67, 16),
+      rgb(202, 163, 54),
+      rgb(236, 67, 16)
+    ) !important;
+    border-image-slice: 1 !important;
+    border-bottom: 2px solid $primary !important;
+  }
+}
+
+html {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 1px 0 5px $grey;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 10px;
+
+    &:hover {
+      background: $primary;
+    }
+  }
+}
