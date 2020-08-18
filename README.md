@@ -70,7 +70,7 @@ Once all of the dependencies have been installed successfully from the project d
 npm start
 ```
 
-A new browser window should automatically open displaying the app. If it doesn't, navigate to [http://localhost:3000/](http://localhost:3000/) in your browser
+A new browser window should automatically open displaying the app. If it doesn't, navigate to [http://localhost:3006/](http://localhost:3006/) in your browser
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console. <br/>
